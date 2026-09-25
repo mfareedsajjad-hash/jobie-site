@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up — Jobie</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="auth-left">
+    <div class="footer-logo" style="font-size:26px">Jobie</div>
+    <h2>Create Your Free Account</h2>
+    <p style="opacity:.85">Join thousands of job seekers hired through Jobie every month.</p>
+    <ul>
+      <li>✔ 100% free for job seekers</li>
+      <li>✔ One-click apply with saved profile</li>
+      <li>✔ Verified employers only</li>
+    </ul>
+  </div>
+  <div class="auth-right">
+    <div class="auth-card">
+      <h3>Create Account</h3>
+      <p>Fill in your details to get started</p>
+      <form id="registerForm">
+        <div class="field-row">
+          <div class="field"><label>First Name *</label><input type="text" required></div>
+          <div class="field"><label>Last Name *</label><input type="text" required></div>
+        </div>
+        <div class="field"><label>Email *</label><input type="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>Phone</label><input type="tel" placeholder="+92 3XX XXXXXXX"></div>
+        <div class="field"><label>I am a...</label>
+          <select><option>Job Seeker</option><option>Employer / Recruiter</option></select>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Password *</label><input type="password" required minlength="6"></div>
+          <div class="field"><label>Confirm Password *</label><input type="password" required minlength="6"></div>
+        </div>
+        <div class="check-row"><input type="checkbox" required id="terms"><label for="terms" style="font-weight:400">I agree to the Terms & Conditions</label></div>
+        <button class="btn btn-primary w-full" type="submit">Sign Up</button>
+      </form>
+      <div class="auth-switch">Already have an account? <a href="login.html">Sign in</a></div>
+      <div class="auth-switch"><a href="index.html">← Back to Home</a></div>
+    </div>
+  </div>
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>

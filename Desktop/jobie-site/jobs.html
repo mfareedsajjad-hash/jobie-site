@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find Jobs — Jobie</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><span class="mark">J</span> Jobie</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="jobs.html" class="active">Find Jobs</a>
+      <a href="companies.html">Companies</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-outline" href="login.html">Sign In</a>
+      <a class="btn btn-primary" href="register.html">Sign Up</a>
+      <button class="hamburger">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container"><h1>Find Jobs</h1><p>1,000+ openings from verified companies — filter and apply today.</p></div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+    <form class="filters" id="jobsFilter">
+      <input id="fSearch" type="text" placeholder="Search job title or keyword...">
+      <select id="fCategory">
+        <option value="">All Categories</option>
+        <option value="it">IT & Software</option>
+        <option value="design">Design</option>
+        <option value="marketing">Marketing</option>
+        <option value="finance">Finance</option>
+      </select>
+      <select id="fLocation">
+        <option value="">All Locations</option>
+        <option value="karachi">Karachi</option>
+        <option value="lahore">Lahore</option>
+        <option value="islamabad">Islamabad</option>
+        <option value="remote">Remote</option>
+      </select>
+      <select id="fType">
+        <option value="">All Types</option>
+        <option value="full">Full Time</option>
+        <option value="part">Part Time</option>
+        <option value="remote">Remote</option>
+        <option value="contract">Contract</option>
+      </select>
+      <div style="display:flex;gap:10px">
+        <button class="btn btn-primary" type="submit" style="padding:10px 18px">Search</button>
+        <button class="btn btn-outline" type="button" id="resetFilters" style="padding:10px 18px">Reset</button>
+      </div>
+    </form>
+
+    <div class="jobs-grid">
+      <article class="job-card" data-category="it" data-location="karachi" data-type="full">
+        <div class="job-card-top"><div class="company-logo" style="background:#451d95">TS</div><div><h3 style="margin:0">Senior Frontend Developer</h3><small>TechSphere Inc. • Karachi</small></div></div>
+        <div class="job-meta"><span>⏰ Full Time</span><span>📍 On-site</span><span>🧑 💻 3+ yrs</span></div>
+        <p style="font-size:13px;color:#7c8290;margin-bottom:12px">Build modern React interfaces for our flagship products with a senior team.</p>
+        <div class="job-card-foot"><span class="salary">PKR 250k–320k</span><a class="btn btn-primary" href="job-detail.html" style="padding:9px 20px">View</a></div>
+      </article>
+      <article class="job-card" data-category="design" data-location="remote" data-type="remote">
+        <div class="job-card-top"><div class="company-logo" style="background:#3b82f6">PX</div><div><h3 style="margin:0">UI/UX Designer</h3><small>PixelCraft Studio • Remote</small></div></div>
+        <div class="job-meta"><span>⏰ Full Time</span><span>📍 Remote</span><span>🧑 💻 2+ yrs</span></div>
+        <p style="font-size:13px;color:#7c8290;margin-bottom:12px">Design clean product flows, prototypes, and design systems.</p>
+        <div class="job-card-foot"><span class="salary">PKR 180k–240k</span><a class="btn btn-primary" href="job-detail.html" style="padding:9px 20px">View</a></div>
+      </article>
+      <article class="job-card" data-category="marketing" data-location="lahore" data-type="full">
+        <div class="job-card-top"><div class="company-logo" style="background:#10b981">BM</div><div><h3 style="margin:0">Digital Marketing Lead</h3><small>BrandMotion • Lahore</small></div></div>
+        <div class="job-meta"><span>⏰ Full Time</span><span>📍 Hybrid</span><span>🧑 💻 5+ yrs</span></div>
+        <p style="font-size:13px;color:#7c8290;margin-bottom:12px">Own SEO, campaigns, and growth analytics for national brands.</p>
+        <div class="job-card-foot"><span class="salary">PKR 200k–280k</span><a class="btn btn-primary" href="job-detail.html" style="padding:9px 20px">View</a></div>
+      </article>
+      <article class="job-card" data-category="finance" data-location="islamabad" data-type="part">
+        <div class="job-card-top"><div class="company-logo" style="background:#84cc16">FN</div><div><h3 style="margin:0">Accounts Officer</h3><small>FinNova • Islamabad</small></div></div>
+        <div class="job-meta"><span>⏰ Part Time</span><span>📍 On-site</span><span>🧑 💻 1+ yrs</span></div>
+        <p style="font-size:13px;color:#7c8290;margin-bottom:12px">Handle bookkeeping, reconciliations, and monthly reporting.</p>
+        <div class="job-card-foot"><span class="salary">PKR 90k–130k</span><a class="btn btn-primary" href="job-detail.html" style="padding:9px 20px">View</a></div>
+      </article>
+      <article class="job-card" data-category="it" data-location="remote" data-type="contract">
+        <div class="job-card-top"><div class="company-logo" style="background:#6d28d9">CW</div><div><h3 style="margin:0">Backend Engineer (Node.js)</h3><small>CloudWorks • Remote</small></div></div>
+        <div class="job-meta"><span>⏰ Contract</span><span>📍 Remote</span><span>🧑 💻 4+ yrs</span></div>
+        <p style="font-size:13px;color:#7c8290;margin-bottom:12px">Scale our APIs and microservices serving 2M+ users monthly.</p>
+        <div class="job-card-foot"><span class="salary">PKR 300k–400k</span><a class="btn btn-primary" href="job-detail.html" style="padding:9px 20px">View</a></div>
+      </article>
+      <article class="job-card" data-category="design" data-location="karachi" data-type="part">
+        <div class="job-card-top"><div class="company-logo" style="background:#06b6d4">GD</div><div><h3 style="margin:0">Graphic Designer</h3><small>CreativeDesk • Karachi</small></div></div>
+        <div class="job-meta"><span>⏰ Part Time</span><span>📍 Hybrid</span><span>🧑 💻 1+ yrs</span></div>
+        <p style="font-size:13px;color:#7c8290;margin-bottom:12px">Create brand visuals for social and print campaigns.</p>
+        <div class="job-card-foot"><span class="salary">PKR 70k–100k</span><a class="btn btn-primary" href="job-detail.html" style="padding:9px 20px">View</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">Jobie</div><p style="font-size:14px;margin-top:10px">Your trusted job portal to discover careers and apply faster.</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><a href="index.html">Home</a><a href="jobs.html">Find Jobs</a><a href="companies.html">Companies</a><a href="about.html">About Us</a></div>
+      <div class="footer-links"><h4>Account</h4><a href="login.html">Sign In</a><a href="register.html">Sign Up</a><a href="dashboard.html">Dashboard</a></div>
+      <div><h4>Contact</h4><p style="font-size:14px">hello@jobie.example<br>Pakistan</p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Jobie. Demo website — all data is sample data.</div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

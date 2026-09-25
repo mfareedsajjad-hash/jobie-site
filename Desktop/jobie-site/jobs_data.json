@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Senior Frontend Developer",
+        "company": "Tech Solutions Ltd",
+        "location": "Remote / On-site",
+        "type": "Full-time",
+        "apply_url": "/jobs.html#job-1"
+    },
+    {
+        "id": 2,
+        "title": "UI/UX Designer",
+        "company": "Tech Solutions Ltd",
+        "location": "Remote / On-site",
+        "type": "Full-time",
+        "apply_url": "/jobs.html#job-2"
+    },
+    {
+        "id": 3,
+        "title": "Digital Marketing Lead",
+        "company": "Tech Solutions Ltd",
+        "location": "Remote / On-site",
+        "type": "Full-time",
+        "apply_url": "/jobs.html#job-3"
+    },
+    {
+        "id": 4,
+        "title": "Accounts Officer",
+        "company": "Tech Solutions Ltd",
+        "location": "Remote / On-site",
+        "type": "Full-time",
+        "apply_url": "/jobs.html#job-4"
+    },
+    {
+        "id": 5,
+        "title": "Backend Engineer (Node.js)",
+        "company": "Tech Solutions Ltd",
+        "location": "Remote / On-site",
+        "type": "Full-time",
+        "apply_url": "/jobs.html#job-5"
+    },
+    {
+        "id": 6,
+        "title": "Graphic Designer",
+        "company": "Tech Solutions Ltd",
+        "location": "Remote / On-site",
+        "type": "Full-time",
+        "apply_url": "/jobs.html#job-6"
+    }
+]
